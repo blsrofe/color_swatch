@@ -10350,7 +10350,9 @@ module.exports = getTopColor;
 var $ = __webpack_require__(0);
 
 var appendColor = function appendColor(data) {
-  console.log(data);
+  var color = data.value;
+  var colorCount = data.color_count;
+  $('.top-color').append(color + ' (' + colorCount + ')');
 };
 
 module.exports = appendColor;
