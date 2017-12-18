@@ -10545,7 +10545,9 @@ var parseText = function parseText() {
 };
 
 var turnTextToArray = function turnTextToArray(text) {
-  return text.trim().split(" ");
+  var punctuationless = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+  var finalString = punctuationless.replace(/\s{2,}/g, " ");
+  return finalString.trim().split(" ");
 };
 
 var checkTextForColors = function checkTextForColors(textArray) {
