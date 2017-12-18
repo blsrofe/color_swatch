@@ -838,7 +838,7 @@ module.exports = {
 var $ = __webpack_require__(8);
 
 $(document).ready(function () {
-  $('body').on('load');
+  // $('body').on('load', )
 });
 
 /***/ }),
